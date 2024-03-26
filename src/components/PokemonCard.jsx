@@ -5,20 +5,9 @@ const generalClasses = `${styles.grassType} ${styles.outsideBorder}`;
 const inner = `${styles.grassTypeInner}`;
 const contentText = `${styles.grassTypeContent} ${styles.name}`;
 const contentImg = `${styles.grassTypeContent} ${styles.illustration}`;
-// Array of (Pokemon) objects
-const PokemonList = [
-  {
-    name: "Bulbasaur",
-    image:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-  },
-  {
-    name: "Mew",
-  },
-];
 
-function PokemonCard() {
-  const pokemon = { name: PokemonList[1].name, image: PokemonList[1].image };
+function PokemonCard({ pokemon }) {
+  /* const pokemon = { name: "Mew" }; */
   let pokemonImage =
     pokemon.image !== undefined ? <img className={contentImg} src={pokemon.image} /> : <p>???</p>;
 

@@ -23,8 +23,6 @@ a:hover {
 }
 
 body {
-  display: grid;
-  margin-top: 10vh;
-  place-items: center;
   min-height: 100vh;
+  margin: 0;
 }
