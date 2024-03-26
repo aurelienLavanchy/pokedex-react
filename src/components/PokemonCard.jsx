@@ -1,4 +1,5 @@
 import styles from "../assets/styles/PokemonCard.module.css";
+import PropTypes from "prop-types";
 
 // CSS classes
 const generalClasses = `${styles.grassType} ${styles.outsideBorder}`;
@@ -20,5 +21,12 @@ function PokemonCard({ pokemon }) {
     </article>
   );
 }
+
+PokemonCard.propTypes = {
+  pokemon: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string,
+  }),
+};
 
 export default PokemonCard;
