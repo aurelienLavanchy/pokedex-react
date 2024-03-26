@@ -1,0 +1,31 @@
+.outsideBorder {
+  border: 2px solid #5e2a84;
+  border-radius: 10px;
+  * {
+    border-radius: inherit;
+  }
+}
+
+.illustration {
+  max-width: 10vw;
+  aspect-ratio: 1;
+}
+
+.grassType {
+  background-color: #3fa129;
+  padding: 1rem;
+}
+.grassTypeInner {
+  background-color: #82c274;
+  padding: 1rem;
+}
+.grassTypeContent {
+  background-color: #eeeeee;
+  padding: 0.5rem;
+  color: #333333;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 14pt;
+}

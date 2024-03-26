@@ -1,0 +1,14 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+
+blockquote {
+  position: absolute;
+  top: 10px;
+  font-style: oblique;
+}
