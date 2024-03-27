@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 
 function PokemonCard({ image, name }) {
   return (
-    <article className={`${styles.grassType} ${styles.outsideBorder} ${styles.content}`}>
+    <article
+      className={`${styles.grassType} ${styles.outsideBorder} ${styles.content} ${styles.size}`}
+    >
       <figure className={`${styles.grassTypeInner}`}>
         {image !== undefined ? (
           <img className={`${styles.grassTypeContent} ${styles.illustration}`} src={image} />

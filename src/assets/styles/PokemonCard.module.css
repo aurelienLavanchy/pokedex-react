@@ -1,3 +1,7 @@
+.size {
+  max-height: 310px;
+}
+
 .outsideBorder {
   border: 2px solid #5e2a84;
   border-radius: 10px;

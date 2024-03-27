@@ -18,6 +18,14 @@ blockquote {
 
 .cardList {
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(3, auto);
   gap: 1rem;
+  min-height: 86vh;
+  align-items: center;
+}
+
+button {
+  min-width: 4rem;
+  max-height: 2rem;
+  place-self: center;
 }
