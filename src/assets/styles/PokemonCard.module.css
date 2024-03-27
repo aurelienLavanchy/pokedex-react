@@ -6,6 +6,12 @@
   }
 }
 
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .illustration {
   max-width: 10vw;
   aspect-ratio: 1;
@@ -22,6 +28,13 @@
 .grassTypeContent {
   background-color: #eeeeee;
   padding: 0.5rem;
+  color: #333333;
+}
+
+.undefined {
+  margin-bottom: 0.5rem !important;
+  padding: 0.4rem;
+  background-color: #eeeeee;
   color: #333333;
 }
 

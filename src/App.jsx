@@ -1,26 +1,19 @@
 import PokemonCard from "./components/PokemonCard";
 import "./assets/styles/App.css";
+import pokemon from "./assets/data/pokemon.json";
 
 // Array of (Pokemon) objects
-const PokemonList = [
-  {
-    name: "Bulbasaur",
-    image:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-  },
-  {
-    name: "Mew",
-  },
-];
-
 function App() {
+  console.log(pokemon);
   return (
     <div>
       <blockquote>
-        Design copied from
+        Design of the cards copied from
         <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page"> Bulbapedia</a>
       </blockquote>
-      <PokemonCard pokemon={PokemonList[0]} />
+      <div className="cardList">
+        {pokemon && pokemon.map((p) => <PokemonCard key={p.id} image={p.image} name={p.name} />)}
+      </div>
     </div>
   );
 }
