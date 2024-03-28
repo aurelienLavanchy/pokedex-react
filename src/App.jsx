@@ -2,6 +2,7 @@ import PokemonCard from "./components/PokemonCard";
 import "./assets/styles/App.css";
 import pokemon from "./assets/data/pokemon.json";
 import { useState } from "react";
+import NavBar from "./components/NavBar";
 
 /* {pokemon && pokemon.map((p) => <PokemonCard key={p.id} image={p.image} name={p.name} />)} */
 
@@ -15,13 +16,13 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <blockquote>
         Design of the cards copied from
         <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page"> Bulbapedia</a>
       </blockquote>
+      <NavBar handleNext={handleNextClick} handlePrevious={handlePreviousClick} />
       <div className="cardList">
-        <button onClick={handlePreviousClick}>Previous</button>
         {
           <PokemonCard
             key={pokemon[pokemonIndex].id}
@@ -29,7 +30,6 @@ function App() {
             name={pokemon[pokemonIndex].name}
           />
         }
-        <button onClick={handleNextClick}>Next</button>
       </div>
     </div>
   );

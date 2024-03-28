@@ -2,7 +2,7 @@
   text-align: center;
   display: grid;
   place-items: center;
-  padding-top: 4rem;
+  height: 100vh;
   * {
     box-sizing: border-box;
     margin: 0;
@@ -18,9 +18,9 @@ blockquote {
 
 .cardList {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 1rem;
-  min-height: 86vh;
+  /* grid-template-columns: repeat(3, auto); */
+  /* gap: 1rem; */
+  min-height: 15vh;
   align-items: center;
 }
 
@@ -28,4 +28,13 @@ button {
   min-width: 4rem;
   max-height: 2rem;
   place-self: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
 }
