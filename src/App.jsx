@@ -3,9 +3,12 @@ import "./assets/styles/App.css";
 import pokemonList from "./assets/data/pokemon.json";
 import { useState } from "react";
 import NavBar from "./components/NavBar";
+import { useEffect } from "react";
 
 function App() {
   const [pokemonIndex, setPokemonIndex] = useState(0);
+  useEffect(() => window.alert("hello pokemon trainer :)"), []);
+  pokemonIndex === 1 ? window.alert("pika pikachu !!!") : null;
 
   return (
     <div className="container">

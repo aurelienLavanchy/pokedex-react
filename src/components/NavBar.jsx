@@ -3,8 +3,6 @@ import "../assets/styles/NavBar.css";
 import pokemonArray from "../assets/data/pokemon.json";
 
 function NavBar({ setPokemonIndex }) {
-  /* console.log(pokemonIndex);
-  console.log(setPokemonIndex); */
   const handleClick = (index) => {
     setPokemonIndex(index);
   };
