@@ -25,7 +25,7 @@ blockquote {
 }
 
 button {
-  min-width: 4rem;
+  min-width: 4.8rem;
   max-height: 2rem;
   place-self: center;
 }

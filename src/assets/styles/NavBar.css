@@ -1,7 +1,11 @@
 nav {
-  display: flex;
-  gap: 6rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, auto);
   button {
-    scale: 1.2;
+    scale: 1.1;
+  }
+  h1 {
+    grid-column: span 3;
   }
 }
